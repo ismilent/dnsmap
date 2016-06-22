@@ -94,11 +94,15 @@ int main(int argc, char *argv[]) {
 		argv[1][i]=(tolower(argv[1][i]));
 	#if DEBUG
 		printf("domain: %s\n", argv[1]);
-	#endif	
+	#endif
+	
+	/* Fix check valid domain	
 	if(!isValidDomain(argv[1])) {
 		printf("%s", DOMAINERR);	
 		exit(1);
 	}
+	*/
+	
 
 	for(i=0;i<argc;++i) {
 		if((strlen(argv[i]))>MAXSTRSIZE) {
